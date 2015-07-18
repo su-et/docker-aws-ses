@@ -1,4 +1,7 @@
 #!/bin/bash
+#
+# Written by sfeng@stanford.edu
+#
 export SHELL=/bin/bash
 
 if [[ ! $FROM || ! $TO || ! $SUBJECT || ! -f /tmp/message.txt ]]; then

@@ -28,3 +28,10 @@ core@n1 /usr/bin/docker run --rm \
    -e SUBJECT="This is a test" \
    -v /path/to/message.txt:/tmp/message.txt xueshanf/aws-ses 
 ```
+
+ToDO
+========
+* Add Bcc and Cc
+* Support Html content
+* Escape whole JSON special character set. Curently only escape double quote and newline.
+
