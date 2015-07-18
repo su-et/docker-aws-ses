@@ -21,10 +21,10 @@ Use the image
 ========
 
 ```
-core@n1 /usr/bin/docker run --rm
+core@n1 /usr/bin/docker run --rm \
    -v /path/to/.aws:/root/.aws \
    -e FROM=verified-sender@example.com \
-   -e TO="rcpt1@example.com,rcpt2@example.com \
+   -e TO="rcpt1@example.com,rcpt2@example.com" \
    -e SUBJECT="This is a test" \
    -v /path/to/message.txt:/tmp/message.txt xueshanf/aws-ses 
 ```
