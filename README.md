@@ -1,7 +1,7 @@
 Docker aws-ses
 =============
 
-Sending email using AWS SES service. Requirements to run the container:
+Sending email using AWS SES service. Here are the requirements to run the container:
 
 * You have verified sender address with AWS SES service
 * The EC2 instance has role-based SES service access or you pass in AWS credentials the container.
