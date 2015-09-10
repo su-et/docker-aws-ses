@@ -1,16 +1,17 @@
 Docker aws-ses
-=============
+==============
 
-Sending email using AWS SES service. Here are the requirements to run the container:
+Send email using AWS SES service. Here are the requirements to run the container:
 
 * You have verified sender address with AWS SES service
-* The EC2 instance has role-based SES service access or you pass in AWS credentials the container.
+* The EC2 instance has role-based SES service access or you pass in AWS credentials to the container.
 
-This repo triggers auto-build and push images to dockerhub.com/u/xueshanf/aws-ses.
+This repo triggers auto-build and pushes images to dockerhub.com/u/xueshanf/aws-ses.
 
-Build the image
+Build or rebuild the image
+==========================
 
-Rebuild image. This will upgrade the package too:
+This will upgrade the package too:
 
 ```
 core@n1 git clone https://github.com/xueshanf/docker-aws-ses.git
@@ -18,7 +19,7 @@ core@n1 docker build -t xueshanf/aws-ses .
 ```
 
 Use the image
-========
+=============
 
 ```
 core@n1 /usr/bin/docker run --rm \
@@ -29,8 +30,8 @@ core@n1 /usr/bin/docker run --rm \
    -v /path/to/message.txt:/tmp/message.txt xueshanf/aws-ses 
 ```
 
-ToDO
-========
+ToDo
+====
 * Add Bcc and Cc
 * Support Html content
 * Escape whole JSON special character set. Curently only escape double quote and newline.
